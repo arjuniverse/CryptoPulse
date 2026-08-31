@@ -1,6 +1,28 @@
 # 🚀 CryptoPulse
 
+A simple and fast cryptocurrency tracker built with React + Vite.
+Track real-time crypto prices, search coins, sort data, and manage your favorite assets—all in a clean UI.
 
+---
+
+## ✨ Features
+
+* 🔍 Search cryptocurrencies instantly
+* 📊 Sort by price, market cap, or name
+* ⭐ Add/remove favorites
+* ⚡ Fast performance with Vite
+* 📱 Responsive design
+
+---
+
+## 🛠️ Tech Stack
+
+* React
+* Vite
+* JavaScript (ES6+)
+* CSS
+
+---
 
 ## ⚙️ Setup
 
