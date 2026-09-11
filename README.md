@@ -23,10 +23,10 @@ Responsive Interface
 Optimized for desktop, tablet, and mobile devices.
 
 Fast Development Workflow
-Built with Vite for fast development startup and Hot Module Replacement (HMR).
+Built with Vite for fast startup and Hot Module Replacement (HMR).
 
 Component-Based Architecture
-Uses reusable React components to improve maintainability and scalability.
+Uses reusable React components for better maintainability and scalability.
 
 Tech Stack
 Technology	Purpose
@@ -38,7 +38,7 @@ HTML5	Application structure
 Getting Started
 Prerequisites
 
-Make sure you have the following installed:
+Make sure the following are installed:
 
 Node.js
 npm
@@ -48,18 +48,10 @@ Installation
 Clone the repository:
 
 git clone https://github.com/arjuniverse/SpendWise.git
-
-
-Navigate to the project directory:
-
 cd SpendWise
-
-
-Install dependencies:
-
 npm install
 
-Run the Development Server
+Development Server
 
 Start the Vite development server:
 
@@ -95,34 +87,34 @@ CryptoPulse/
 └── vite.config.js
 
 Directory Overview
-Directory / File	Description
+File / Directory	Description
 src/components/	Reusable UI components
 src/pages/	Application-level page components
-src/utils/	Utility functions and shared application logic
-src/App.jsx	Root React component and application layout
+src/utils/	Utility functions and shared logic
+src/App.jsx	Root React component
 src/main.jsx	React application entry point
-public/	Static assets served directly by Vite
-index.html	Application HTML entry point
-package.json	Project dependencies and scripts
+public/	Static assets
+index.html	HTML entry point
+package.json	Dependencies and project scripts
 vite.config.js	Vite configuration
 Planned Improvements
  Integrate a cryptocurrency API for real-time market data
  Add interactive price and market-cap charts
  Implement historical price analysis
  Add configurable price alerts
- Introduce dark mode and theme customization
- Add pagination or virtualized rendering for large datasets
- Persist favorites using localStorage or a backend service
- Add comprehensive loading, error, and empty states
+ Introduce dark mode
+ Add theme customization
+ Add pagination for large datasets
+ Persist favorites using localStorage
+ Add loading and error states
  Improve accessibility and keyboard navigation
  Add automated unit and component testing
  Add API error handling and retry mechanisms
 Contributing
 
-Contributions are welcome and appreciated.
+Contributions are welcome.
 
-To contribute:
-
+How to Contribute
 Fork the repository.
 Create a feature branch:
 git checkout -b feature/your-feature
@@ -132,9 +124,19 @@ Test the application locally.
 Commit your changes:
 git commit -m "feat: add your feature"
 
-Push the branch:
+Push your branch:
 git push origin feature/your-feature
 
 Open a Pull Request.
 
-For larger changes, consider opening an issue
+For larger changes, consider opening an issue first to discuss the proposed implementation.
+
+License
+
+This project is open source and available under the MIT License.
+
+Author
+
+Arjuniverse
+
+Built with React, Vite, JavaScript, and CSS.
