@@ -1,79 +1,123 @@
-CryptoPulse
+````
+# CryptoPulse
 
-A lightweight and responsive cryptocurrency tracking application built with React and Vite.
+A lightweight and responsive cryptocurrency tracking application built with **React** and **Vite**.
 
 CryptoPulse allows users to monitor cryptocurrency market data, search for assets, sort cryptocurrencies by key metrics, and manage a personalized list of favorite coins through a clean and responsive interface.
 
-Features
+---
 
-Cryptocurrency Search
-Search and filter cryptocurrencies by name or symbol.
+## Features
 
-Market Data Sorting
-Sort cryptocurrencies by:
+### Cryptocurrency Search
 
-Price
-Market capitalization
-Name
+Search and filter cryptocurrencies instantly by:
 
-Favorites Management
-Add or remove cryptocurrencies from a personalized favorites list.
+- Coin name
+- Cryptocurrency symbol
 
-Responsive Interface
-Optimized for desktop, tablet, and mobile devices.
+### Market Data Sorting
 
-Fast Development Workflow
-Built with Vite for fast startup and Hot Module Replacement (HMR).
+Sort cryptocurrency data by:
 
-Component-Based Architecture
-Uses reusable React components for better maintainability and scalability.
+- Price
+- Market capitalization
+- Name
 
-Tech Stack
-Technology	Purpose
-React	UI development and component architecture
-Vite	Development server and build tooling
-JavaScript (ES6+)	Application logic
-CSS	Styling and responsive layouts
-HTML5	Application structure
-Getting Started
-Prerequisites
+### Favorites Management
+
+Add or remove cryptocurrencies from your personal favorites list.
+
+### Responsive Interface
+
+Optimized for:
+
+- Desktop
+- Tablet
+- Mobile
+
+### Fast Development Workflow
+
+Built with **Vite** for fast development startup and Hot Module Replacement (HMR).
+
+### Component-Based Architecture
+
+Uses reusable React components to improve:
+
+- Maintainability
+- Scalability
+- Code organization
+- Reusability
+
+---
+
+## Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| **React** | UI development and component architecture |
+| **Vite** | Development server and build tooling |
+| **JavaScript (ES6+)** | Application logic |
+| **CSS** | Styling and responsive layouts |
+| **HTML5** | Application structure |
+
+---
+
+## Getting Started
+
+### Prerequisites
 
 Make sure the following are installed:
 
-Node.js
-npm
-Git
-Installation
+- **Node.js**
+- **npm**
+- **Git**
+
+### Installation
 
 Clone the repository:
 
+```bash
 git clone https://github.com/arjuniverse/SpendWise.git
 cd SpendWise
 npm install
+````
 
-Development Server
+ ### Development Server
 
-Start the Vite development server:
+ Start the development server:
 
+```
 npm run dev
+```
 
+ The application will be available at:
 
-The application will be available at:
-
+```
 http://localhost:5173
+```
 
-Production Build
+---
 
-Create an optimized production build:
+ ## Production Build
 
+ Create an optimized production build:
+
+```
 npm run build
+```
 
+ Preview the production build locally:
 
-Preview the production build locally:
-
+```
 npm run preview
+```
 
-Project Structure
+---
+
+ ## Project Structure
+
+```
 CryptoPulse/
 ├── public/
 ├── src/
@@ -85,58 +129,74 @@ CryptoPulse/
 ├── index.html
 ├── package.json
 └── vite.config.js
+```
 
-Directory Overview
-File / Directory	Description
-src/components/	Reusable UI components
-src/pages/	Application-level page components
-src/utils/	Utility functions and shared logic
-src/App.jsx	Root React component
-src/main.jsx	React application entry point
-public/	Static assets
-index.html	HTML entry point
-package.json	Dependencies and project scripts
-vite.config.js	Vite configuration
-Planned Improvements
- Integrate a cryptocurrency API for real-time market data
- Add interactive price and market-cap charts
- Implement historical price analysis
- Add configurable price alerts
- Introduce dark mode
- Add theme customization
- Add pagination for large datasets
- Persist favorites using localStorage
- Add loading and error states
- Improve accessibility and keyboard navigation
- Add automated unit and component testing
- Add API error handling and retry mechanisms
-Contributing
+ ### Directory Overview
 
-Contributions are welcome.
+ | File / Directory | Description |
+| --- | --- |
+| `src/components/` | Reusable UI components |
+| `src/pages/` | Application-level page components |
+| `src/utils/` | Utility functions and shared logic |
+| `src/App.jsx` | Root React component |
+| `src/main.jsx` | React application entry point |
+| `public/` | Static assets |
+| `index.html` | HTML entry point |
+| `package.json` | Project dependencies and scripts |
+| `vite.config.js` | Vite configuration |
 
-How to Contribute
-Fork the repository.
-Create a feature branch:
-git checkout -b feature/your-feature
+---
 
-Implement your changes.
-Test the application locally.
-Commit your changes:
-git commit -m "feat: add your feature"
+ ## Planned Improvements
 
-Push your branch:
-git push origin feature/your-feature
+ - [ ] Integrate a cryptocurrency API for real-time market data
+- [ ] Add interactive price charts
+- [ ] Add market-cap charts
+- [ ] Implement historical price analysis
+- [ ] Add configurable price alerts
+- [ ] Introduce dark mode
+- [ ] Add theme customization
+- [ ] Add pagination for large datasets
+- [ ] Persist favorites using `localStorage`
+- [ ] Add loading and error states
+- [ ] Improve accessibility
+- [ ] Improve keyboard navigation
+- [ ] Add automated unit testing
+- [ ] Add component testing
+- [ ] Add API retry mechanisms
 
-Open a Pull Request.
+---
 
-For larger changes, consider opening an issue first to discuss the proposed implementation.
+ ## Contributing
 
-License
+ Contributions are welcome.
 
-This project is open source and available under the MIT License.
+ ### How to Contribute
 
-Author
+ 1. Fork the repository.
+2. Create a feature branch.
+3. Implement your changes.
+4. Test the application locally.
+5. Commit your changes.
+6. Push the branch.
+7. Open a Pull Request.
 
-Arjuniverse
+ For larger changes, consider opening an issue first to discuss the proposed implementation.
 
-Built with React, Vite, JavaScript, and CSS.
+---
+
+ ## License
+
+ This project is open source and available under the **MIT License**.
+
+---
+
+ ## Author
+
+ **Arjuniverse**
+
+ Built with **React**, **Vite**, **JavaScript**, and **CSS**.
+
+```
+
+```
