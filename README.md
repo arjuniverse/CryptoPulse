@@ -90,6 +90,7 @@ flowchart TD
 
     N --> B
 ```
+
 ## Project Architecture
 
 ```text
