@@ -60,36 +60,36 @@ Uses reusable React components to improve:
 
 ## System Architecture
 
-The application follows a component-based frontend architecture. Users interact with the React interface to browse cryptocurrency market data, search for coins, sort market information, and manage their favorite cryptocurrencies.
+CryptoPulse follows a component-based frontend architecture built with React and Vite. Users interact with the application to view cryptocurrency data, search for coins, sort market information, and manage their favorite cryptocurrencies.
 
 ```mermaid
 flowchart TD
-    A[User] --> B[React Frontend]
+
+    A[User] --> B[React Frontend - Vite]
 
     B --> C[App.jsx]
 
-    C --> D[Cryptocurrency Components]
+    C --> D[Crypto Components]
     C --> E[Search and Filter]
     C --> F[Sorting Controls]
     C --> G[Favorites Management]
 
-    D --> H[Crypto List]
-    H --> I[Crypto Cards]
+    D --> H[Crypto List and Cards]
+    E --> I[Filter by Name or Symbol]
+    F --> J[Sort by Price, Market Cap, or Name]
+    G --> K[Add or Remove Favorites]
 
-    E --> J[Filter by Name or Symbol]
-    F --> K[Sort by Price, Market Cap, or Name]
+    H --> L[Market Data Processing]
+    I --> L
+    J --> L
+    K --> L
 
-    G --> L[Add or Remove Favorites]
-    L --> M[Favorites State]
+    L --> M[Display Updated Cryptocurrency Data]
 
-    I --> N[Market Data Display]
-    J --> N
-    K --> N
-    M --> N
+    M --> N[Responsive User Interface]
 
     N --> B
 ```
-
 ## Project Architecture
 
 ```text
