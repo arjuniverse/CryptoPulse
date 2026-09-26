@@ -1,4 +1,31 @@
+# CryptoPulse — Cryptocurrency Tracking Application
 
+CryptoPulse is a lightweight and responsive cryptocurrency tracking application built with **React and Vite**.
+
+The application allows users to monitor cryptocurrency market data, search for assets, sort cryptocurrencies by key metrics, and manage a personalized list of favorite coins through a clean and responsive interface.
+
+## Features
+
+### Cryptocurrency Search
+
+Search and filter cryptocurrencies instantly by:
+
+- Coin name
+- Cryptocurrency symbol
+
+### Market Data Sorting
+
+Sort cryptocurrency data by:
+
+- Price
+- Market capitalization
+- Name
+
+### Favorites Management
+
+- Add cryptocurrencies to your favorites list.
+- Remove cryptocurrencies from your favorites list.
+- Manage preferred coins through a simple interface.
 
 ### Responsive Interface
 
