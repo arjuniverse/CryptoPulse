@@ -1,121 +1,52 @@
-# CryptoPulse — Cryptocurrency Tracking Application
+# CryptoPulse by arjuniverse
 
-CryptoPulse is a lightweight and responsive cryptocurrency tracking application built with **React and Vite**.
+**See the Market. Feel the Pulse.**
 
-The application allows users to monitor cryptocurrency market data, search for assets, sort cryptocurrencies by key metrics, and manage a personalized list of favorite coins through a clean and responsive interface.
+CryptoPulse is a modern, responsive cryptocurrency tracking dashboard built with **React and Vite**. It uses live market data from the public CoinGecko API and provides tools to explore cryptocurrencies, monitor prices, manage a watchlist, and simulate a personal portfolio.
 
 ## Features
 
-### Cryptocurrency Search
-
-Search and filter cryptocurrencies instantly by:
-
-- Coin name
-- Cryptocurrency symbol
-
-### Market Data Sorting
-
-Sort cryptocurrency data by:
-
-- Price
-- Market capitalization
-- Name
-
-### Favorites Management
-
-- Add cryptocurrencies to your favorites list.
-- Remove cryptocurrencies from your favorites list.
-- Manage preferred coins through a simple interface.
-
-### Responsive Interface
-
-Optimized for different screen sizes:
-
-- Desktop
-- Tablet
-- Mobile
-
-### Fast Development Workflow
-
-Built with **Vite** for fast development startup and Hot Module Replacement (HMR).
-
-### Component-Based Architecture
-
-Uses reusable React components to improve:
-
-- Maintainability
-- Scalability
-- Code organization
-- Reusability
+- **Dashboard:** View cryptocurrency market data and key statistics.
+- **Explore:** Search, filter, and sort cryptocurrencies by name, symbol, price, and market capitalization.
+- **Coin Details:** Explore individual cryptocurrency information.
+- **Watchlist:** Add and remove favorite cryptocurrencies.
+- **Portfolio:** Track a simulated cryptocurrency portfolio.
+- **Settings:** Customize the theme, currency (USD/INR), and refresh interval.
+- **Responsive UI:** Optimized for desktop, tablet, and mobile devices.
 
 ## Tech Stack
 
 | Technology | Purpose |
 |---|---|
-| React | UI development and component architecture |
+| React | UI and component architecture |
 | Vite | Development server and build tooling |
 | JavaScript (ES6+) | Application logic |
 | CSS | Styling and responsive layouts |
-| HTML5 | Application structure |
+| CoinGecko API | Cryptocurrency market data |
 
 ## System Architecture
 
-CryptoPulse follows a component-based frontend architecture built with React and Vite. Users interact with the application to view cryptocurrency data, search for coins, sort market information, and manage their favorite cryptocurrencies.
-
 ```mermaid
 flowchart TD
-
-    A[User] --> B[React Frontend - Vite]
-
-    B --> C[App.jsx]
-
-    C --> D[Crypto Components]
-    C --> E[Search and Filter]
-    C --> F[Sorting Controls]
-    C --> G[Favorites Management]
-
-    D --> H[Crypto List and Cards]
-    E --> I[Filter by Name or Symbol]
-    F --> J[Sort by Price, Market Cap, or Name]
-    G --> K[Add or Remove Favorites]
-
-    H --> L[Market Data Processing]
-    I --> L
-    J --> L
+    A[User] --> B[React + Vite Frontend]
+    B --> C[CryptoPulse Dashboard]
+    C --> D[Explore and Search]
+    C --> E[Coin Details]
+    C --> F[Watchlist]
+    C --> G[Simulated Portfolio]
+    C --> H[Settings]
+    D --> I[Market Data Layer]
+    E --> I
+    I --> J[CoinGecko Public API]
+    I --> K[Cached Market Data]
+    J --> L[Updated Cryptocurrency Data]
     K --> L
-
-    L --> M[Display Updated Cryptocurrency Data]
-
-    M --> N[Responsive User Interface]
-
-    N --> B
-```
-
-## Project Architecture
-
-```text
-User
-  ↓
-React Frontend
-  ↓
-App.jsx
-  ├── Cryptocurrency Components
-  ├── Search and Filter
-  ├── Sorting Controls
-  └── Favorites Management
-  ↓
-Market Data Processing
-  ↓
-Cryptocurrency List and Cards
-  ↓
-Responsive User Interface
+    L --> B
 ```
 
 ## Getting Started
 
 ### Prerequisites
-
-Make sure the following tools are installed:
 
 - Node.js
 - npm
@@ -126,96 +57,61 @@ Make sure the following tools are installed:
 Clone the repository:
 
 ```bash
-git clone https://github.com/arjuniverse/SpendWise.git
-cd SpendWise
+git clone https://github.com/arjuniverse/CryptoPulse.git
+cd CryptoPulse
 ```
 
-> Replace the repository URL and folder name with your actual CryptoPulse repository details if they are different.
-
-Install the dependencies:
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-### Run the Development Server
-
-Start the application locally:
+### Run Development Server
 
 ```bash
 npm run dev
 ```
 
-Vite will provide a local development URL in your terminal.
-
 ### Build for Production
-
-Create a production build:
 
 ```bash
 npm run build
 ```
 
-### Preview the Production Build
-
-Preview the production build locally:
+### Preview Production Build
 
 ```bash
 npm run preview
 ```
 
-## Project Structure
+## API and Data Handling
 
-```text
-CryptoPulse/
-├── public/
-├── src/
-│   ├── components/
-│   │   ├── CryptoCard.jsx
-│   │   ├── CryptoList.jsx
-│   │   ├── SearchBar.jsx
-│   │   └── ...
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── ...
-├── index.html
-├── package.json
-├── vite.config.js
-└── README.md
-```
+CryptoPulse retrieves cryptocurrency market information through the public **CoinGecko API**.
 
-> The component names above are examples. Update the structure to match the actual files in your project.
+- API requests may be rate limited.
+- Responses are cached to reduce repeated requests.
+- Previously saved data can be displayed when the API is temporarily unavailable, with an appropriate notice.
 
-## Usage
+## Important Note
 
-Once the application is running, you can:
-
-1. Browse available cryptocurrencies.
-2. Search for a coin by name or symbol.
-3. Sort market data by price, market capitalization, or name.
-4. Add coins to your favorites list.
-5. Remove coins from your favorites list.
-6. Use the application across desktop, tablet, and mobile devices.
+The portfolio feature is simulated and intended for demonstration and educational purposes. CryptoPulse does not execute real trades or provide financial advice.
 
 ## Future Improvements
 
-Potential improvements include:
-
-- Cryptocurrency price charts
-- Real-time market updates
-- Detailed coin information pages
-- Portfolio tracking
+- Interactive cryptocurrency price charts
+- Real-time market notifications
+- Advanced portfolio analytics
 - Price alerts
-- Dark and light theme support
-- Persistent favorites using LocalStorage
-- Additional market statistics
+- Additional market indicators
 
 ## License
 
-This project is currently available for personal and educational use.
+This project is available for personal and educational use. Add an appropriate open-source license if required.
 
-Add an appropriate license to the repository if required.
+## Author
 
-## Contributors
+**Arjun Sharma (arjuniverse)**
 
-Add contributor names and project information here.
+- GitHub: https://github.com/arjuniverse
+- Repository: https://github.com/arjuniverse/CryptoPulse
